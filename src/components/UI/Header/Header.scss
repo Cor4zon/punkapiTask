@@ -6,12 +6,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.header .header__logo {
-  margin: 0 2rem;
-}
-.header .search-form__container {
-  margin-right: 3rem;
+
+  .header__logo {
+    margin: 0 2rem;
+  }
+
+  .search-form__container {
+    margin-right: 3rem;
+  }
 }
 
-/*# sourceMappingURL=Header.css.map */
+
+
+

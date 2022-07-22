@@ -1,12 +1,12 @@
-import './App.css';
+import { Outlet } from "react-router-dom";
 import Header from "./components/UI/Header/Header";
-import BeerBoard from "./components/BeerBoard/BeerBoard";
+import './App.css';
 
 function App() {
   return (
     <div className="App">
         <Header />
-        <BeerBoard />
+        <Outlet />
     </div>
   );
 }
