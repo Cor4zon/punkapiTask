@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
+
 import BeerCard from "../BeerCard/BeerCard";
 import APIClient from "../../services/APIClient";
+import "./BeerBoard.css";
 
 const BeerBoard = () => {
     const [beers, setBeers] = useState([]);
@@ -17,7 +19,7 @@ const BeerBoard = () => {
     });
 
     return (
-        <div>
+        <div className="beer-board__container">
             { beerBoard }
         </div>
     );
