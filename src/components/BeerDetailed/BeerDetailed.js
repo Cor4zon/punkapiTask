@@ -23,6 +23,10 @@ const BeerDetailed = () => {
         })
     }, [])
 
+    const foodPairing = beer.food_pairing?.map(food => {
+        return <li>{food}</li>
+    })
+
     return (
         <div className="beer-detailed__container">
             <div className="image__container">
@@ -30,11 +34,13 @@ const BeerDetailed = () => {
             </div>
 
             <div className="beer-info">
-                <p className="beer-detailed__name"> { beer.name } </p>
-                <p className="beer-detailed__tagline"> { beer.tagline } </p>
-                <p className="beer-detailed__description"> { beer.description } </p>
-                <p className="beer-detailed__abv"> { beer.abv } </p>
-                <p className="beer-detailed__foodPairing"> { beer.food_pairing } </p>
+                <p className="beer-detailed__name"> <span className="bold"> Название: </span> { beer.name } </p>
+                <p className="beer-detailed__tagline"> <span className="bold"> tagline:</span> { beer.tagline } </p>
+                <p className="beer-detailed__description"> <span className="bold"> Описание: </span> { beer.description } </p>
+                <p className="beer-detailed__abv"> <span className="bold"> abv: </span> { beer.abv } </p>
+                <p className="beer-detailed__foodPairing"> <span className="bold">Сочетается с:</span>
+                    <ul className="food-pairing">{ foodPairing }</ul>
+                </p>
             </div>
 
         </div>

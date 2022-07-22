@@ -59,7 +59,7 @@ const BeerCard = ({ beer }) => {
                 </div>
             </Link>
 
-            <h3 className="beer__name"> { beer.name }</h3>
+            <h2 className="beer__name"> { beer.name }</h2>
             <p className="beer__description">
                 { description }
                 { toggleDescriptionButton }

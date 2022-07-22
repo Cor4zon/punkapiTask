@@ -9,9 +9,25 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  text-align: justify;
 
   .beer-info {
+    margin-left: 3rem;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    .food-pairing {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
+
+  .bold {
+    font-weight: bold;
+  }
+
+
 }
