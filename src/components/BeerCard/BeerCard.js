@@ -9,7 +9,7 @@ const ImageBeer= styled.img`
 
 const BeerCard = ({ beer }) => {
     return (
-        <div>
+        <div className="beer-card__container">
             <ImageBeer src={beer.image_url} alt={beer.name}/>
             <h1> { beer.name }</h1>
             <p> { beer.description }</p>

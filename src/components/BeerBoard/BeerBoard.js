@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import BeerCard from "./BeerCard";
-import APIClient from "../services/APIClient";
+import BeerCard from "../BeerCard/BeerCard";
+import APIClient from "../../services/APIClient";
 
 const BeerBoard = () => {
     const [beers, setBeers] = useState([]);
