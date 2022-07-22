@@ -42,8 +42,8 @@ const BeerBoard = () => {
             { beerBoard }
 
             <div className="pageInfo">
-                <p>Page { currentPage } of 32</p>
                 <p className="changePageBtn" onClick={loadPrevPage}>{"<< Prev"}</p>
+                <p>Page { currentPage } of 32</p>
                 <p className="changePageBtn" onClick={loadNextPage}>{"Next >>"}</p>
             </div>
         </div>
