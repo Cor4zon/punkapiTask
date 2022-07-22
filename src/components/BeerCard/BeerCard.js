@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from "styled-components";
 
+import "./BeerCard.css";
+
 const ImageBeer= styled.img`
   width: 100px;
   height: auto;
