@@ -1,4 +1,6 @@
 import React from 'react';
+
+import SearchBeerForm from "../SearchBeerForm/SearchBeerForm";
 import "./Header.css";
 
 const Header = () => {
