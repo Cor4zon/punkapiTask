@@ -1,0 +1,29 @@
+.beer-detailed__container {
+  margin-top: 2rem;
+  padding: 1rem 3rem;
+  height: 500px;
+  width: 80%;
+  border: 2px solid silver;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: justify;
+}
+.beer-detailed__container .beer-info {
+  margin-left: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.beer-detailed__container .beer-info .food-pairing {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.beer-detailed__container .bold {
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=BeerDetailed.css.map */
