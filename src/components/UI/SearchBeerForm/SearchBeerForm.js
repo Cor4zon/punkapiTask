@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 import APIClient from "../../../services/APIClient";
+import "./SearchBeerForm.css";
 
 const SearchBeerForm = () => {
     const [ beerTitle, setBeerName ] = useState("");
@@ -19,12 +20,14 @@ const SearchBeerForm = () => {
     }
 
     return (
-        <div>
-            <form action="" method="get" className="formSearchCharacter">
-                <input type="text" onChange={searchInputChange} name="name" id="name" required placeholder="Search by name..." />
-                <button type="submit" className="searchBtn" onClick={getBeerByName}>Search</button>
-            </form>
-        </div>
+        <form action="" method="get" className="formSearchCharacter">
+            <input type="text" onChange={searchInputChange} name="name" id="name" required placeholder="Search by name..." />
+            <button type="submit"  id="searchButton" className="searchButton" onClick={getBeerByName}>
+                <div id="circle"></div>
+                <a href="#">Search</a>
+            </button>
+
+        </form>
     );
 };
 
