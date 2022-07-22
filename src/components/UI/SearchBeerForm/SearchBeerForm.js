@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from "react-router-dom";
 
 import APIClient from "../../../services/APIClient";
 import "./SearchBeerForm.css";
@@ -6,6 +7,7 @@ import "./SearchBeerForm.css";
 const SearchBeerForm = () => {
     const [ beerTitle, setBeerName ] = useState("");
     const client = new APIClient();
+    const navigate = useNavigate();
 
     const searchInputChange = (event) => {
         setBeerName(event.target.value);
@@ -15,8 +17,7 @@ const SearchBeerForm = () => {
         event.preventDefault();
 
         client.fetchBeerByName(beerTitle).then((result) => {
-            console.log(result.data);
-        });
+            navigate(`/${result.data[0].id}`, { replace: true })});
     }
 
     return (
@@ -26,7 +27,6 @@ const SearchBeerForm = () => {
                 <div id="circle"></div>
                 <a href="#">Search</a>
             </button>
-
         </form>
     );
 };
